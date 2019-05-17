@@ -1,0 +1,4 @@
+cp $1 java_input.m
+m4 java_pass1.m > symbols.m
+m4 java_pass2.m > byte_code.in
+./jvm byte_code.in $2
