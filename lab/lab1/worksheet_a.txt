@@ -1,0 +1,56 @@
+Alex Moore
+CPSC 2311 Sec 3 Lab 1
+
+1. Run "./acc_x86". Explain what the simulator is doing in the fetch, decode, execute
+    cycle. (10 points)
+    fetch
+      - grabs information from memory
+    decode
+      - interprets the instructions grabbed from memory
+    execute
+      - carries out the instructions
+
+2. You should be using one of the branching instructions in your my_loop.m source code (ex: ble0, bgt0, etc.).
+At which position in memory (i.e. program counter value) is your branch instruction? (10 points)
+  Position 20
+
+
+3. Explain the difference between MDR and MAR. (10 points)
+  - MAR holds the memory address
+  - MDR holds the data
+
+
+4. Run the three versions of the program using acc and record the statistics. (10 points)
+Source1
+instructions executed =  98
+instruction fetches   = 195
+data reads            =  54
+data writes           =  22
+
+Source2
+instructions executed =  76
+instruction fetches   = 151
+data reads            =  43
+data writes           =  22
+
+
+my_loop
+instructions executed = 130
+instruction fetches   = 259
+data reads            =  75
+data writes           =  33
+
+
+5. Explain the differences in statistics. (15 points)
+  The order of instructions in each of the files results in the differences in
+  each of the statistics. The Source2 file seems to be the most efficient and
+  has the least amount of instruction calls.
+
+
+6. Which version do you think is better and why? (15 points)
+I think the Source2 version is better because it has the least amount of
+instructions executed, least amount of fetches, and the least amount of data
+writes compared to the other 2 versions.
+
+
+7. Fill in the blanks in worksheet_b.txt. (30 points)

@@ -1,0 +1,49 @@
+/* Alex Moore
+   CPSC 2311 Sec 3
+   Lab 7
+*/
+
+1. (20 pts) Fill in the table below for every call to "fact". Each row
+represents the values of r1 and lr when line 3 executes and they are pushed
+onto the stack. The first time it executes, r1 is unset and the lr points to line 39.
+
+r1	lr
+---	-------
+-	39
+10	12
+9   12
+8   12
+7   12
+6   12
+5   12
+4   12
+3   12
+2   12
+1   -
+
+
+2. (15 pts) In "fac.s", the multiply instruction on line 12 comes after a "bl" which is a branch that will always be taken. How does line 12 get executed if the "bl" is always taken?
+
+HINT: Review what "bl" does at http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0489c/Cihfddaf.html (scroll down to "Operations")
+    Line 12 gets executed because bl takes the address of the next
+    instruction and copies it into the lr, so when the branch is over,
+    line 12 will then execute.
+
+
+
+3. (10 pts) Why doesn't the code in "fac2.s" save any registers on the stack? What is it doing instead?
+    fac2.s takes an iterative approach and goes through and multiplies every
+    time and puts the value in r1, instead of having to use the stack and
+    recursively going through and then back through pulling values from the
+    stack. By using an iterative approach, fac2.s avoids having to save
+    registers on the the stack.
+
+
+4. (5 pts) Identify which program calculates the factorial recursively and which is iterative.
+              fac.s is recursive, fac2.s is iterative
+
+
+
+5. (50 pts) Comment each line in "fac.s" and "fac2.s" that has the comment symbol (@) at the end of it.
+
+NOTE: The comments for "main:" in "fac.s" are already done for you and you do not have to comment "main:" in "fac2.s".

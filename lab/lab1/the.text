@@ -1,0 +1,114 @@
+000:   0
+001:   0
+002:   0
+003:   1
+004:  10
+005:  50
+006:   2
+007:  60
+008:   0
+009:  50
+010:   4
+011:  60
+012:   1
+013:  50
+014:   0
+015:  40
+016:   1
+017:  60
+018:   0
+019:  50
+020:   1
+021:  30
+022:   3
+023:  60
+024:   1
+025:  76
+026:  13
+027:  90
+028:   0
+029:   0
+030:   5
+
+simulation of accumulator machine begins
+pc=005: load    2    acc <- 0
+pc=007: store   0
+pc=009: load    4    acc <- 10
+pc=011: store   1
+pc=013: load    0    acc <- 0
+pc=015: add     1    acc <- 10
+pc=017: store   0
+pc=019: load    1    acc <- 10
+pc=021: sub     3    acc <- 9
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 10
+pc=015: add     1    acc <- 19
+pc=017: store   0
+pc=019: load    1    acc <- 9
+pc=021: sub     3    acc <- 8
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 19
+pc=015: add     1    acc <- 27
+pc=017: store   0
+pc=019: load    1    acc <- 8
+pc=021: sub     3    acc <- 7
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 27
+pc=015: add     1    acc <- 34
+pc=017: store   0
+pc=019: load    1    acc <- 7
+pc=021: sub     3    acc <- 6
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 34
+pc=015: add     1    acc <- 40
+pc=017: store   0
+pc=019: load    1    acc <- 6
+pc=021: sub     3    acc <- 5
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 40
+pc=015: add     1    acc <- 45
+pc=017: store   0
+pc=019: load    1    acc <- 5
+pc=021: sub     3    acc <- 4
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 45
+pc=015: add     1    acc <- 49
+pc=017: store   0
+pc=019: load    1    acc <- 4
+pc=021: sub     3    acc <- 3
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 49
+pc=015: add     1    acc <- 52
+pc=017: store   0
+pc=019: load    1    acc <- 3
+pc=021: sub     3    acc <- 2
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 52
+pc=015: add     1    acc <- 54
+pc=017: store   0
+pc=019: load    1    acc <- 2
+pc=021: sub     3    acc <- 1
+pc=023: store   1
+pc=025: bgt0   13
+pc=013: load    0    acc <- 54
+pc=015: add     1    acc <- 55
+pc=017: store   0
+pc=019: load    1    acc <- 1
+pc=021: sub     3    acc <- 0
+pc=023: store   1
+pc=025: bgt0   13
+pc=027: prt     0:      55
+pc=029: halt
+simulation of accumulator machine ends with acc = 0
+  instructions executed =  76
+  instruction fetches   = 151
+  data reads            =  43
+  data writes           =  22

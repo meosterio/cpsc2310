@@ -1,0 +1,7 @@
+load(one)
+store(x)
+label(loop)
+sub(y)
+bgt0(done)
+mul(x)
+label(done)
