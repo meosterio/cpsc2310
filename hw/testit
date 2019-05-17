@@ -1,0 +1,4 @@
+sed ' s/word(a,24)/word(a,80)/ ' gcd.m > newp.m
+sed ' s/word(b,60)/word(b,48)/ ' newp.m > finalp.m
+./assemble.sh finalp.m
+./acc
