@@ -1,4 +1,4 @@
-/* Alex Moore (alex9)
+/* (alex9)
  * CPSC 2310 Sec 001
  * Program1
  * 2/15/18
