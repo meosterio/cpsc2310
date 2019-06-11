@@ -1,4 +1,3 @@
-comment(` Alex Moore')
 comment(` CPSC 2311 - Sec 3')
 comment(` Lab 1')
 
