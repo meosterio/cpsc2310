@@ -1,4 +1,4 @@
-/* Alex Moore
+/* 
    CPSC 2311 Sec 3
    Lab 3
 */
