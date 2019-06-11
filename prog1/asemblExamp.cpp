@@ -1,10 +1,7 @@
-// Copyright 2015 Jesse Kennedy
 // Licensed under GPL 3.0
 //
-// Jesse Kennedy
 // CPSC 231-001
 // Assignment 1
-// Due 02/04/2015
 //
 // Assembles a subset of JVM assembly code into Java bytecode using a
 // two-pass structure
